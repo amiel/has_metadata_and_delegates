@@ -1,0 +1,18 @@
+Has Metadata And Delegates
+=======================
+
+Delegates methods to a metadata association, and automatically creates it if necessary.
+
+Example
+=======
+
+	class User < ActiveRecord::Base
+		has_one :metadata, :class_name => 'UserMetadata'
+	  	has_metadata_and_delegates :invite_count, :'foobar*'
+	end
+	
+	class UserMetadata < ActiveRecord::Base
+	end
+
+
+Copyright (c) 2009 Amiel Martin, released under the MIT license
