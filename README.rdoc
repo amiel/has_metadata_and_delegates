@@ -2,8 +2,7 @@
 
 Delegates methods to a metadata association, and automatically creates it if necessary.
 
-=== Example
-
+== Example
 
 	class User < ActiveRecord::Base
 		has_one :metadata, :class_name => 'UserMetadata'
@@ -13,8 +12,8 @@ Delegates methods to a metadata association, and automatically creates it if nec
 	class UserMetadata < ActiveRecord::Base
 	end
 
-	>> User.first.metadata_without_creation # => nil
-	>> User.first.foobar = 'blah'
-	>> User.first.metadata.foobar # => 'blah'
+	User.first.metadata_without_creation # => nil
+	User.first.foobar = 'blah'
+	User.first.metadata.foobar # => 'blah'
 
 Copyright (c) 2009 Amiel Martin, released under the MIT license
