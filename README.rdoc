@@ -16,4 +16,10 @@ Delegates methods to a metadata association, and automatically creates it if nec
 	User.first.foobar = 'blah'
 	User.first.metadata.foobar # => 'blah'
 
+== Rails Versions
+
+This plugin is known to work in versions of rails 2.x. It has not been tested in rails 3.
+
+Please let me know what experience you have if you try this with rails 3.
+
 Copyright (c) 2009 Amiel Martin, released under the MIT license
